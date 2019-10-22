@@ -1,16 +1,16 @@
 package ba.unsa.etf.rpr;
 
-public class Supermarket {
-    Artikl[] artikli = new Artikl[1000];
+class Supermarket {
+    private static Artikl[] artikli = new Artikl[1000];
 
-    public boolean dodajArtikl(Artikl a) {
+    void dodajArtikl(Artikl a) {
         int i=0;
         while(artikli[i]!=null) i++;
         artikli[i]=a;
-        return true;
+        //return true;
     }
 
-    public Artikl izbaciArtiklSaKodom(String s) {
+    Artikl izbaciArtiklSaKodom(String s) {
         Artikl neki = new Artikl();
         int i = 0;
         while (artikli[i] != null) {
@@ -30,7 +30,7 @@ public class Supermarket {
         return neki;
     }
 
-    public Artikl[] getArtikli() {
+    Artikl[] getArtikli() {
         return artikli;
     }
 }

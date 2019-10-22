@@ -1,21 +1,21 @@
 package ba.unsa.etf.rpr;
 
-public class Korpa {
+class Korpa {
 
-    Artikl[] artikli = new Artikl[50];
+   private static Artikl[] artikli = new Artikl[50];
 
-    public boolean dodajArtikl(Artikl a) {
+    boolean dodajArtikl(Artikl a) {
         int i = 0;
         while (artikli[i] != null) i++;
         artikli[i] = a;
         return true;
     }
 
-    public Artikl[] getArtikli() {
+    Artikl[] getArtikli() {
         return artikli;
     }
 
-    public Artikl izbaciArtiklSaKodom(String s) {
+    Artikl izbaciArtiklSaKodom(String s) {
         Artikl neki = new Artikl();
         int i = 0;
         while (artikli[i] != null) {
@@ -34,7 +34,7 @@ public class Korpa {
         return neki;
     }
 
-    public int dajUkupnuCijenuArtikala() {
+    int dajUkupnuCijenuArtikala() {
         int suma = 0;
         int i = 0;
         while (artikli[i] != null) {
