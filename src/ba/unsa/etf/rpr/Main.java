@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Korpa korpa = new Korpa();
-    private static Supermarket supermarket = new Supermarket();
+    static Korpa korpa = new Korpa();
+    static Supermarket supermarket = new Supermarket();
 
     private static void unosArtikalaUMarket(){
         supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "1"));
@@ -30,14 +30,14 @@ public class Main {
         supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "20"));
     }
 
-    public static void ispisArtikala(Artikl[] artikli){
+    private static void ispisArtikala(Artikl[] artikli){
         for (Artikl a : artikli) {
             if(a != null) System.out.println("Naziv: " + a.getNaziv() + ", Kod: " + a.getKod() + ", Cijena: " + a.getCijena() + " KM");
         }
     }
 
     public static void main(String[] args) {
-//      Kreirati program koji modelira supermarket. Kupac ima korpu koja moze sadrzavati maksimalno 50 artikala.
+/*      Kreirati program koji modelira supermarket. Kupac ima korpu koja moze sadrzavati maksimalno 50 artikala.
 //      Supermarket maksimalno sadrzi 1000 artikala. Artikl je odredjen svojim nazivom, cijenom i kodom.
 //      Radi jednostavnosti cemo pretpostaviti da su svi kodovi artikala razliciti. Program treba da radi sljedece:
 //      Kupac na pocetku dobija praznu korpu, te u nju moze ubacivati i iz nje izbacivati artikle. Ukoliko kupac zeli
@@ -47,7 +47,7 @@ public class Main {
 //      artikl se vraca u supermarket. Cilj je implementirati program tako da se transakcije izmedju korpe i supermarketa
 //      rjesavaju preko koda. Kupcu je potrebno omoguciti opciju da se prekine program, odnosno da odustane od kupovine,
 //      ili da ide na checkout gdje se obracunava potpuni iznos. Placanje se vrsi unosom pri cemu se validira da li je
-//      unesena negativna, odnosno dovoljna suma novca.
+//      unesena negativna, odnosno dovoljna suma novca.*/
 
         unosArtikalaUMarket();
         for(;;){
@@ -100,6 +100,7 @@ public class Main {
                 System.out.println("Placeno, kupovina finalizirana.");
                 return;
             }
+
         }
 
     }
