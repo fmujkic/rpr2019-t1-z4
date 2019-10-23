@@ -16,8 +16,10 @@ class Korpa {
     }
 
     Artikl izbaciArtiklSaKodom(String s) {
+
         Artikl neki = new Artikl();
         int i = 0;
+
         while (artikli[i] != null) {
             Artikl a = artikli[i];
             if (s.equals(a.kod)) {
@@ -30,6 +32,9 @@ class Korpa {
             }
             i++;
         }
+
+
+
         artikli[i - 1] = null;
         return neki;
     }

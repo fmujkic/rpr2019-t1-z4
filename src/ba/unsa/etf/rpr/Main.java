@@ -59,7 +59,8 @@ public class Main {
             if (opcija == 0) {
                 System.out.println("Odustali ste od kupovine.");
                 return;
-            } else if (opcija == 1) {
+            }
+            else if (opcija == 1) {
                 System.out.println("Dodavanje artikla u korpu\nArtikli u marketu su: ");
                 ispisArtikala(supermarket.getArtikli());
                 System.out.println("Unesite kod artikla (unesite malo slovo \"c\" za odustajanje): ");
@@ -75,7 +76,8 @@ public class Main {
                         }
                     }
                 }
-            } else if (opcija == 2) {
+            }
+            else if (opcija == 2) {
                 System.out.println("Izbacivanje artikla iz korpe\nArtikli u korpi su: ");
                 ispisArtikala(korpa.getArtikli());
                 System.out.println("Unesite kod artikla (unesite malo slovo \"c\" za odustajanje): ");
