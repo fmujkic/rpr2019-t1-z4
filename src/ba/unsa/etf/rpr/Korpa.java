@@ -2,7 +2,7 @@ package ba.unsa.etf.rpr;
 
 class Korpa {
 
-   private static Artikl[] artikli = new Artikl[50];
+   private  Artikl[] artikli = new Artikl[50];
 
     boolean dodajArtikl(Artikl a) {
         int i = 0;
@@ -28,6 +28,7 @@ class Korpa {
                     artikli[j] = artikli[j + 1];
                     j++;
                 }
+
                 neki = artikli[i];
             }
             i++;
