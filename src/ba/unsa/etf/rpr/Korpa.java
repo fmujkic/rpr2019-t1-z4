@@ -11,7 +11,7 @@ class Korpa {
         return true;
     }
 
-    Artikl[] getArtikli() {
+     Artikl[] getArtikli() {
         return artikli;
     }
 
